@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* Light gray background */
+            color: #333; /* Dark gray text color */
+        }
+        .container {
+            max-width: 900px; /* Increased max-width for better layout */
+            margin: auto;
+            padding: 20px;
+            display: grid; /* Using CSS Grid for better image layout */
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+            gap: 20px; /* Gap between grid items */
+        }
+        .image {
+            text-align: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+            transition: transform 0.3s ease; /* Smooth transition on hover */
+        }
+        .image img:hover {
+            transform: scale(1.05); /* Scale up slightly on hover */
+        }
+        h1, h2 {
+            text-align: center; /* Center headings */
+        }
+        ul {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        ul li {
+            list-style-type: none; /* Remove default bullet points */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Products</h1>
+    <h2>Explore Our Range of Honey and Honey-based Products</h2>
+    <ul>
+        <li>Pure Honey</li>
+        <li>Honeycomb</li>
+        <li>Honey-infused Skincare Products</li>
+        <li>Honey-based Beverages</li>
+    </ul>
+    <div class="container">
+        <div class="image">
+            <img src="C:\Users\pc\OneDrive\Pictures\honey2.png" alt="Image 1">
+        </div>
+        <div class="image">
+            <img src="C:\Users\pc\OneDrive\Pictures\honey3.png" alt="Image 2">
+        </div>
+        <div class="image">
+            <img src="C:\Users\pc\OneDrive\Pictures\honey1.png" alt="Image 3">
+        </div>
+        <div class="image">
+            <img src="C:\Users\pc\OneDrive\Pictures\honey1.png" alt="Image 4">
+        </div>
+        <div class="image">
+            <img src="C:\Users\pc\OneDrive\Pictures\honey5.png" alt="Image 5">
+        </div>
+    </div>
+
+    <footer>
+        <marquee bgrcolor="orange" height="50" color="red" direction="left" behavior="alternate" scrollamount="10">Discover the sweetness of Lororoi Honey - Try it today!</marquee>
+    </footer>
+</body>
+</html>
